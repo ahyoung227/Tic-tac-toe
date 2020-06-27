@@ -28,13 +28,6 @@ div {
     cursor: pointer;
 }
 
-.player-info {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
 .turn {
     border: 5px solid red;
 }
@@ -60,3 +53,18 @@ div {
     background-color: #aaaaaa;
 }
 
+.turn {
+    width: 100px;
+    height: 50px;
+}
+
+.player {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#restart {
+    margin: 20px auto;
+
+}

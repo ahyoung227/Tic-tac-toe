@@ -33,24 +33,26 @@ let info= document.querySelector('.game-info');
 
 //place marker on the board
 let player1turn = true;
-let player1div= document.querySelector(".player1")
-let player2div= doNotTrack.querySelector(".player2")
+let playerdiv= document.querySelector(".player")
 
 for (let i = 0; i < gameBoard.length; i++)
 gameBoard[i].addEventListener('click', chooseArea, { once: true })
 
 function chooseArea(event) {
+
     let currentMarker= player1turn ? player1.marker : player2.marker;
     if (player1turn) {
         event.target.innerHTML = currentMarker;
-
+        playerdiv.innerHTML = "It's player2's turn"
         if (checkWin(currentMarker)) {
             endGame(player1)
         }
     } else {
         event.target.innerHTML = currentMarker;
+        playerdiv.innerHTML = "It's player1's turn"
         if (checkWin(currentMarker)) {
             endGame(player2)
+
         }
     }
     
@@ -58,6 +60,7 @@ function chooseArea(event) {
         info.classList.add('end-game')
         info.textContent = "It's draw!"
         document.getElementById('restart').style.display = "block"
+        playerdiv.innerHTML = ""
     }
     takeTurn()
 };
@@ -89,6 +92,7 @@ function endGame(player) {
     for (let i = 0; i < gameBoard.length; i++) { 
         gameBoard[i].removeEventListener('click', chooseArea)
     }
+    playerdiv.innerHTML = ""
 }
 
 function restart() {
