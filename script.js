@@ -106,17 +106,6 @@ function restart() {
     }
 }
 
-
-
-
-
-
-    //gameover
-        //shows game over, who wins, restart button
-
-
-//init function
-
 //Challenge
     // computer-random move
     // minimax algorithm
