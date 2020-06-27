@@ -35,9 +35,10 @@ let info= document.querySelector('.game-info');
 let player1turn = true;
 let playerdiv= document.querySelector(".player")
 
-for (let i = 0; i < gameBoard.length; i++)
-gameBoard[i].addEventListener('click', chooseArea, { once: true })
+for (let i = 0; i < gameBoard.length; i++) {
+gameBoard[i].addEventListener('click', chooseArea, { once: true }) }
 
+playerdiv.innerHTML = "It's player1's turn"
 function chooseArea(event) {
 
     let currentMarker= player1turn ? player1.marker : player2.marker;
@@ -108,6 +109,8 @@ function restart() {
     for (let i = 0; i < gameBoard.length; i++) {
         gameBoard[i].addEventListener('click', chooseArea, { once: true })
     }
+
+    playerdiv.innerHTML = "It's player1's turn"
 }
 
 //Challenge
