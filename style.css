@@ -1,70 +1,68 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 div {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .board {
-    display: grid;
-    width: 498px;
-    height: 498px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin: 0 auto;
-    background-color: lightgray;
-    line-height: 166px;
-    font-size: 150px;
-    font-family: 'Courier New', Courier, monospace;
+  display: grid;
+  width: 498px;
+  height: 498px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+  background-color: lightgray;
+  line-height: 166px;
+  font-size: 150px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .board > div {
-    width: 166px;
-    height: 166px;
-    text-align: center;
-    vertical-align: center;
-    border: 1px solid #000000;
-    cursor: pointer;
+  width: 166px;
+  height: 166px;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid #000000;
+  cursor: pointer;
 }
 
 .turn {
-    border: 5px solid red;
+  border: 5px solid red;
 }
 
 .end-game {
-    display: block;
-    opacity: 0.9;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 30px;
-    color: black;
+  display: block;
+  opacity: 0.9;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: black;
 }
 
 #restart {
-    font-size: 30px;
-    background-color: black;
-    color: white;
-
+  font-size: 30px;
+  background-color: black;
+  color: white;
 }
 
 #restart:hover {
-    color: black;
-    background-color: #aaaaaa;
+  color: black;
+  background-color: #aaaaaa;
 }
 
 .turn {
-    width: 100px;
-    height: 50px;
+  width: 100px;
+  height: 50px;
 }
 
 .player {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 #restart {
-    margin: 20px auto;
-
+  margin: 20px auto;
 }
