@@ -4,6 +4,7 @@
 
 ## About The Project
 
+<p>This is a simple tic tac toe game built by Javascript.</p>
 <a href="https://ahyoung227.github.io/tic-tac-toe/"><img src="/tictactoe-ahyoung.png" width="300px" height="300px"></a>
 <a href="https://ahyoung227.github.io/tic-tac-toe/"> Link</a>
 
